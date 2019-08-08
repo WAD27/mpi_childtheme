@@ -3,9 +3,14 @@ function($) {
 
   init()
 
+
+
+  //
+  console.log("Custom Scripts OK.");
+
 }()
 )
 
 function init() {
-  alert("INIT")
+  console.log("INIT");
 }
