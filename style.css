@@ -2,23 +2,3 @@
 Theme Name: Meeting Planners Theme
 Template: mint
 */
-/* vars */
-:root {
-  --color-black: black;
-  --color-white: white;
-}
-/* wireframe */
-* {
-  outline: 1px dashed rgba(0,0,0,0.35);
-}
-/* overrides */
-footer {
-  padding: 16px 0;
-}
-/* lib */
-.ha {
-  height: auto;
-}
-.no-padding {
-  padding: 0;
-}
