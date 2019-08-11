@@ -9,3 +9,7 @@ function dependencias() {
   wp_enqueue_script('mpi-scripts', get_stylesheet_directory_uri() . '/js/custom.js');
 
 }
+
+// cpts
+include_once "cpts/mpi-team.php";
+add_action('init','mpi_team', 0);
