@@ -3,7 +3,9 @@
 :root {
   --color-black: black;
   --color-white: white;
-  --font-1: "Montserrat" sans-serif;
+  --color-1: #AE9460;
+  --color-2: #6D6E70;
+  --font-master: "Montserrat" sans-serif;
 }
 /* wireframe */
 * {
@@ -11,13 +13,14 @@
 }
 /* overrides */
 body {
-  font-family: var(--font-1);
+  font-family: var(--font-master) !important;
   font-weight: 300;
+  /* color: var(--color-2); */
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-1);
+  font-family: var(--font-master) !important;
   font-weight: bold;
-
+  /* color: var(--color-1); */
 }
 footer {
   padding: 16px 0;

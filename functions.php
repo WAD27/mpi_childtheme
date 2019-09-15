@@ -12,4 +12,6 @@ function dependencias() {
 
 // cpts
 include_once "cpts/mpi-team.php";
+include_once "cpts/mpi-galeria.php";
 add_action('init','mpi_team', 0);
+add_action('init','mpi_galeria', 0);

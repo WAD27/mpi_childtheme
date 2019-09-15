@@ -29,7 +29,7 @@ function mpi_team() {
     'show_in_menu'        => true,
     'show_in_nav_menus'   => true,
     'show_in_admin_bar'   => true,
-    'menu_position'       => 2,
+    'menu_position'       => 0,
     'can_export'          => true,
     'has_archive'         => true,
     'exclude_from_search' => false,
@@ -41,5 +41,3 @@ function mpi_team() {
   register_post_type('mpi-team',$args);
 
 }
-
-// add_action('init','mpi_team', 0);
