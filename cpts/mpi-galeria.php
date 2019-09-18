@@ -20,7 +20,7 @@ function mpi_galeria() {
     'label'               => __( 'MPI Galería', 'mpi-theme' ),
     'description'         => __( 'Galerías de MPI', 'mpi-theme' ),
     'labels'              => $labels,//backend
-    'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+    'supports'            => array( 'title'),
     'taxonomies'          => array( 'MPI Galería' ),
     'menu_icon'           => 'dashicons-format-gallery',
     'hierarchical'        => false,
@@ -29,7 +29,7 @@ function mpi_galeria() {
     'show_in_menu'        => true,
     'show_in_nav_menus'   => true,
     'show_in_admin_bar'   => true,
-    'menu_position'       => 1,
+    'menu_position'       => -2,
     'can_export'          => true,
     'has_archive'         => true,
     'exclude_from_search' => false,

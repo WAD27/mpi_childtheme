@@ -20,7 +20,7 @@ function mpi_team() {
     'label'               => __( 'MPI Team', 'mpi-theme' ),
     'description'         => __( 'Miembros del Team MPI', 'mpi-theme' ),
     'labels'              => $labels,//backend
-    'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+    'supports'            => array( 'title'),
     'taxonomies'          => array( 'MPI Team' ),
     'menu_icon'           => 'dashicons-groups',
     'hierarchical'        => false,
@@ -29,7 +29,7 @@ function mpi_team() {
     'show_in_menu'        => true,
     'show_in_nav_menus'   => true,
     'show_in_admin_bar'   => true,
-    'menu_position'       => 0,
+    'menu_position'       => -1,
     'can_export'          => true,
     'has_archive'         => true,
     'exclude_from_search' => false,
