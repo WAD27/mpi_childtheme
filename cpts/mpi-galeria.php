@@ -3,7 +3,7 @@ function mpi_galeria() {
   $labels = array(
     'name'                => _x( 'MPI Galería', 'Post Type General Name', 'mpi-theme' ),
     'singular_name'       => _x( 'Galería MPI', 'Post Type Singular Name', 'mpi-theme' ),
-    'menu_name'           => __( 'MPI Galería', 'mpi-theme' ),
+    'menu_name'           => __( 'MPI Galerías', 'mpi-theme' ),
     'parent_item_colon'   => __( 'Galería padre', 'mpi-theme' ),
     'all_items'           => __( 'Todas las Galerías de MPI Galería', 'mpi-theme' ),
     'view_item'           => __( 'Ver Galería', 'mpi-theme' ),

@@ -3,8 +3,8 @@
 :root {
   --color-black: black;
   --color-white: white;
-  --color-1: #AE9460;//dorado
-  --color-2: #6D6E70;//gris
+  --color-1: #AE9460;
+  --color-2: #6D6E70;
   --font-mpi: "Montserrat" sans-serif;
 }
 /* wireframe */
@@ -25,6 +25,9 @@ h1, h2, h3, h4, h5, h6 {
 p {
   color: var(--color-2) !important;
 }
+a {
+  color: var(--color-1) !important;
+}
 span {
   color: var(--color-1) !important;
 }
@@ -37,4 +40,41 @@ footer {
 }
 .no-padding {
   padding: 0;
+}
+/* general */
+.hamburger._close::after,
+.hamburger._close::before {
+    color: var(--color-1);
+  }
+.hamburger:hover::after,
+.hamburger:hover::before {
+  color: var(--color-2);
+}
+.popup-menu a {
+    background-image: -webkit-linear-gradient(top, var(--color-2) 0, var(--color-2) 100%) !important;
+    background-image: linear-gradient(to bottom, var(--color-2) 0, var(--color-2) 100%) !important;
+}
+.popup-menu .current-menu-ancestor > a, .popup-menu .current-menu-item > a {
+    background-size: 53% 2px;
+}
+/* inicio */
+#inicio-quien {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+#inicio-quien li {
+  font-family: var(--font-mpi);
+  font-weight: lighter;
+  height: auto;
+}
+#inicio-team {
+  min-height: 420px;
+}
+
+
+
+/* footer */
+.copyright p {
+  color: var(--color-1) !important;
 }

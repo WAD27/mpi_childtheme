@@ -3,7 +3,7 @@ function grupo_sycsa() {
   $labels = array(
     'name'                => _x( 'MPI miembro SYCSA', 'Post Type General Name', 'mpi-theme' ),
     'singular_name'       => _x( 'Miembro SYCSA MPI', 'Post Type Singular Name', 'mpi-theme' ),
-    'menu_name'           => __( 'Miembro SYCSA', 'mpi-theme' ),
+    'menu_name'           => __( 'Miembros SYCSA', 'mpi-theme' ),
     'parent_item_colon'   => __( 'Miembro SYCSA padre', 'mpi-theme' ),
     'all_items'           => __( 'Todos los Miembro SYCSA', 'mpi-theme' ),
     'view_item'           => __( 'Ver Miembro SYCSA', 'mpi-theme' ),

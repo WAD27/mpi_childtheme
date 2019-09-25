@@ -1,14 +1,12 @@
-(
-function($) {
+jQuery(document).ready(()=>{
 
+  sliders()
   imagenes()
-
 
   //
   console.log("Custom Scripts OK.");
 
-}()
-)
+})
 
 function imagenes() {
   jQuery(".imgLiquid.imgLiquidFill").imgLiquid()
@@ -18,9 +16,20 @@ function imagenes() {
   console.log("Image containers OK.");
 }
 function grid() {
-  $('#container').masonry({
+  jQuery('#container-galeria').masonry({
     itemSelector : '.item',
     columnWidth : 240
   });
-  console.log("Masonry containers OK.");
+  console.log("Masonry OK.");
+}
+
+function sliders() {
+
+  jQuery("#inicio-slick-team").slick({
+     infinite: true,
+     autoPlay: true,
+  })
+
+  console.log("Sliders OK.")
+
 }

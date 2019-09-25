@@ -5,6 +5,7 @@ Template Name: Inicio MPI
 
 get_header();
 
+// contenido pagina inicio
 if (have_posts()):
   while (have_posts()): the_post();
 
@@ -14,7 +15,8 @@ endwhile;
 else:
   echo "No hay Posts para MPI";
 endif;
+//Secciones complementarias
+get_template_part('inicio-mpi-team');
 
-// endif;
 
 get_footer();
