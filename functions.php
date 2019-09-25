@@ -5,12 +5,12 @@ function dependencias() {
 
   $parent ='parent-style';
   wp_enqueue_style($parent, get_template_directory_uri() . '/style.css');
-  wp_enqueue_style('mpi-style', get_stylesheet_directory_uri() . '/css/slick-theme.css');
-  wp_enqueue_style('mpi-style', get_stylesheet_directory_uri() . '/css/slick.css');
+  wp_enqueue_style('mpi-slidet-theme', get_stylesheet_directory_uri() . '/css/slick-theme.css');
+  wp_enqueue_style('mpi-slider-styles', get_stylesheet_directory_uri() . '/css/slick.css');
   wp_enqueue_style('mpi-style', get_stylesheet_directory_uri() . '/css/custom.css');
   wp_enqueue_script('mpi-imgs', get_stylesheet_directory_uri() . '/js/imgLiquid-min.js');
   wp_enqueue_script('mpi-grid', get_stylesheet_directory_uri() . '/js/masonry.js');
-  wp_enqueue_script('mpi-grid', get_stylesheet_directory_uri() . '/js/slick.min.js');
+  wp_enqueue_script('mpi-slider', get_stylesheet_directory_uri() . '/js/slick.min.js');
   wp_enqueue_script('mpi-scripts', get_stylesheet_directory_uri() . '/js/custom.js');
 
 }
