@@ -3,24 +3,30 @@
 :root {
   --color-black: black;
   --color-white: white;
-  --color-1: #AE9460;
-  --color-2: #6D6E70;
-  --font-master: "Montserrat" sans-serif;
+  --color-1: #AE9460;//dorado
+  --color-2: #6D6E70;//gris
+  --font-mpi: "Montserrat" sans-serif;
 }
 /* wireframe */
 * {
-  outline: 1px dashed rgba(0,0,0,0.35);
+  outline: 1px dashed var(--color-1);
 }
 /* overrides */
 body {
-  font-family: var(--font-master) !important;
+  font-family: var(--font-mpi) !important;
   font-weight: 300;
   /* color: var(--color-2); */
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-master) !important;
+  font-family: var(--font-mpi) !important;
   font-weight: bold;
-  /* color: var(--color-1); */
+  color: var(--color-1) !important;
+}
+p {
+  color: var(--color-2) !important;
+}
+span {
+  color: var(--color-1) !important;
 }
 footer {
   padding: 16px 0;
