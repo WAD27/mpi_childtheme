@@ -26,8 +26,36 @@ function grid() {
 function sliders() {
 
   jQuery("#inicio-slick-team").slick({
-     infinite: true,
-     autoPlay: true,
+    speed: 1000,
+    fade: false,
+    cssEase: 'linear',
+    centerMode: true,
+    dots:true,
+    arrows: false,
+    centerPadding: '60px',
+    slidesToShow: 2,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: true,
+          arrows: false,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1
+        }
+      }
+    ]
   })
 
   console.log("Sliders OK.")

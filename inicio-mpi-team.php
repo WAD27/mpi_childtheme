@@ -3,7 +3,8 @@
 Template Name: inicio MPI Team
 */
 ?>
-<section id="inicio-team" class="container">
+<section id="inicio-team" class="container-fluid">
+  <h3 class="inicio-titulo col-12 text-center">Team MPI</h3>
 
   <div class="row">
 
@@ -17,20 +18,23 @@ Template Name: inicio MPI Team
           while ($q->have_posts()): $q->the_post();
           ?>
 
-
           <div class="incio-slick-team-slide col-12">
 
-            <?php
-            echo the_field('mpi_team_nombre');
-            echo the_field('mpi_team_puesto');
-            echo the_field('mpi_team_foto_perfil');
-            echo the_field('mpi_team_foto_header');
-            echo the_field('mpi_team_instagram');
-            echo the_field('mpi_team_twitter');
-            echo the_field('mpi_team_facebook');
-            echo the_field('mpi_team_email');
-            echo the_field('mpi_team_descripcion_corta');
-            ?>
+            <div class="inicio-team-tarjeta col-8">
+
+              <div class="container-fluid">
+
+                <?php
+                echo the_field('mpi_team_nombre');
+                echo the_field('mpi_team_puesto');
+                echo the_field('mpi_team_foto_perfil');
+                echo the_field('mpi_team_foto_header');
+                echo the_field('mpi_team_twitter');
+                echo the_field('mpi_team_facebook');
+
+                ?>
+              </div>
+            </div>
           </div>
 
           <?php

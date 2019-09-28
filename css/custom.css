@@ -18,8 +18,9 @@ body {
   /* color: var(--color-2); */
 }
 h1, h2, h3, h4, h5, h6 {
+  padding: 1rem;
   font-family: var(--font-mpi) !important;
-  font-weight: bold;
+  font-weight: lighter;
   color: var(--color-1) !important;
 }
 p {
@@ -44,36 +45,75 @@ footer {
 /* general */
 .hamburger._close::after,
 .hamburger._close::before {
-    color: var(--color-1);
-  }
+  color: var(--color-1);
+}
 .hamburger:hover::after,
 .hamburger:hover::before {
   color: var(--color-2);
 }
 .popup-menu a {
-    background-image: -webkit-linear-gradient(top, var(--color-2) 0, var(--color-2) 100%) !important;
-    background-image: linear-gradient(to bottom, var(--color-2) 0, var(--color-2) 100%) !important;
+  background-image: -webkit-linear-gradient(top, var(--color-2) 0, var(--color-2) 100%) !important;
+  background-image: linear-gradient(to bottom, var(--color-2) 0, var(--color-2) 100%) !important;
 }
+/* decoracion menu escritorio */
+.main-header__modules a {
+  color: var(--color-2) !important;
+}
+.main-header__modules a:hover {
+  color: var(--color-1) !important;
+}
+#menu-mpi-menu li a {
+  color: var(--color-2) !important;
+}
+.add-menu a::after, .main-menu a::after {
+  bottom: 4px;
+  height: 2px;
+  background-color: var(--color-1);
+}
+/* decoracion menu movil */
 .popup-menu .current-menu-ancestor > a, .popup-menu .current-menu-item > a {
-    background-size: 53% 2px;
+  background-size: 100% 2px;
+  margin-top: 2px;
+}
+.popup-menu a:hover {
+  background-size: 100% 2px;
 }
 /* inicio */
 #inicio-quien {
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
 }
-
 #inicio-quien li {
   font-family: var(--font-mpi);
   font-weight: lighter;
   height: auto;
 }
 #inicio-team {
-  min-height: 420px;
+  min-height: 320px;
 }
-
-
-
+#inicio-team div {
+  height: 100%;
+}
+#inicio-team-tarjeta {
+  padding: 1rem;
+}
+#inicio-slick-team {
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+}
+.slick-dots {
+  bottom: 25px !important;
+}
+.vc_btn3.vc_btn3-color-blue, .vc_btn3.vc_btn3-color-blue.vc_btn3-style-flat {
+    color: var(--color-white) !important;
+    background-color: var(--color-2) !important;
+    text-transform: uppercase !important;
+}
+.vc_custom_1419258058654 {
+    padding-left: 15px !important;
+    background-color: var(--color-2) !important;
+}
 /* footer */
 .copyright p {
   color: var(--color-1) !important;
