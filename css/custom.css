@@ -4,7 +4,8 @@
   --color-black: black;
   --color-white: white;
   --color-1: #AE9460;
-  --color-2: #6D6E70;
+  /* --color-2: #6D6E70; */
+  --color-2: #6D6F71;
   --font-mpi: "Montserrat" sans-serif;
 }
 /* wireframe */
@@ -29,18 +30,48 @@ p {
 a {
   color: var(--color-1) !important;
 }
+ul {
+  margin: 0;
+}
+section {
+  padding-bottom: 64px;
+}
 span {
   color: var(--color-1) !important;
 }
 footer {
   padding: 16px 0;
 }
+.main-wrapper {
+    padding-bottom: 0;
+}
 /* lib */
 .ha {
   height: auto;
 }
+.h100 {
+  height: 100% !important;
+}
 .no-padding {
   padding: 0;
+}
+.imgLiquid {
+  height: 100%;
+}
+.btn-mpi {
+  display: block;
+  font-weight: lighter;
+  border-radius: 5px;
+  background-color: var(--color-1);
+  color: var(--color-white) !important;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 16px 32px;
+  letter-spacing: 3px;
+  width: auto !important;
+}
+.btn-mpi:hover {
+  opacity: 0.85;
 }
 /* general */
 .hamburger._close::after,
@@ -91,28 +122,66 @@ footer {
 #inicio-team {
   min-height: 320px;
 }
-#inicio-team div {
+#inicio-team .row {
   height: 100%;
 }
 #inicio-team-tarjeta {
   padding: 1rem;
 }
 #inicio-slick-team {
-  min-height: 280px;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+}
+#inicio-team-texto {
+  height: 320px;
+}
+#inicio-team-texto .row{
   display: flex;
   align-items: center;
 }
 .slick-dots {
   bottom: 25px !important;
 }
-.vc_btn3.vc_btn3-color-blue, .vc_btn3.vc_btn3-color-blue.vc_btn3-style-flat {
-    color: var(--color-white) !important;
-    background-color: var(--color-2) !important;
-    text-transform: uppercase !important;
+
+.inicio-contacto-lista {
+  list-style-type: none;
+  margin: 16px 0 16px 0;
 }
-.vc_custom_1419258058654 {
-    padding-left: 15px !important;
-    background-color: var(--color-2) !important;
+.inicio-contacto-texto {
+  height: 240px;
+}
+.inicio-contacto-texto .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vc_btn3.vc_btn3-color-blue, .vc_btn3.vc_btn3-color-blue.vc_btn3-style-flat {
+  color: var(--color-white) !important;
+  background-color: var(--color-1) !important;
+  text-transform: uppercase !important;
+}
+.vc_btn3.vc_btn3-color-blue:hover,
+.vc_btn3.vc_btn3-color-blue.vc_btn3-style-flat:hover {
+  opacity: 0.85;
+}
+.vc_grid .vc_custom_1419258058654 {
+  padding-left: 15px !important;
+  background-color: var(--color-white) !important;
+}
+.vc_btn3 {
+  letter-spacing: 3px !important;
+  font-weight: lighter !important;
+}
+.incio-sycsa-tarjeta  {
+  height: 220px;
+  margin-bottom: 0;
+}
+#inicio-sycsa a {
+  height: 100%;
+}
+#inicio-sycsa .img-miembro-sycsa {
+  height: 100%;
 }
 /* footer */
 .copyright p {

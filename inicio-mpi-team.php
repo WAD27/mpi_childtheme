@@ -48,7 +48,7 @@ Template Name: inicio MPI Team
 
   </div>
 
-  <div class="col-xs-12 col-md-4">
+  <div id="inicio-team-texto" class="col-xs-12 col-md-4">
 
     <div class="row">
       <!-- contenido de la pag 'inicio-team' -->

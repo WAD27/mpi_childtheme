@@ -2,6 +2,7 @@ jQuery(document).ready(()=>{
 
   sliders()
   imagenes()
+  forza_textos()
 
   //
   console.log("Custom Scripts OK.");
@@ -60,4 +61,14 @@ function sliders() {
 
   console.log("Sliders OK.")
 
+}
+
+function forza_textos() {
+
+  setTimeout(()=>{
+    let f = document.querySelector('#inicio-exito .vc_btn3-color-blue')//boton inicio ver mas historias de exito
+
+    f.innerHTML = "Leer mas historias de exito"
+
+  },500)
 }
