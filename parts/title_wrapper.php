@@ -10,47 +10,22 @@ $full_height = MintOptions::get('title_wrapper--full_height');
 	js-title-wrapper
 	<?php
 	echo ' text-' . $align;
-	if ($full_height) { ?> _full-height<?php }
-	if (MintOptions::get('title_wrapper--parallax')) { ?> _parallax<?php }
+	if (!MintOptions::get('title_wrapper--parallax')) { ?> _parallax<?php }
 	?>
 ">
 
-
-	<?php if ($category_image_on_bg && $category_image_src) { ?>
-
-		<div class="title-wrapper__bg js-title-wrapper-bg"
-			style="
-				background-image:url(<?php echo esc_url($category_image_src); ?>);
-				background-position:center;
-				background-size:cover;
-			"
-		></div>
-
-	<?php } else { ?>
-
 		<div
 			class="title-wrapper__bg js-title-wrapper-bg"
-			<?php if (
-				is_singular('post') &&
-				MintOptions::get('title_wrapper--featured_image_on_bg') &&
-				has_post_thumbnail()
-			) { ?>
 				style="
 					background-image:url(<?php
-						$attachment_image_src = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
-						echo esc_url($attachment_image_src[0]);
+						echo get_the_post_thumbnail_url();;
 					?>);
 					background-position:center;
 					background-size:cover;
 				"
-			<?php } ?>
 		></div>
 
-		<?php if (MintOptions::get('title_wrapper_styles--bg_overlay_pattern')) { ?>
 			<div class="title-wrapper__bg-pattern"></div>
-		<?php } ?>
-
-	<?php } ?>
 
 	<div
 		class="title-wrapper__bg-overlay"

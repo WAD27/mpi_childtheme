@@ -17,7 +17,7 @@ Template Name: Inicio MPI Grupo SYCSA
     // var_dump($texto);
     if (!$texto):
       ?>
-      <div class="incio-sycsa-tarjeta col-xs-12 col-md-4">
+      <div class="inicio-sycsa-tarjeta col-xs-12 col-md-4">
         <a class="col-12" href="<?php echo the_field('miembro_sycsa_link'); ?>" target="_blank">
           <div class="img-miembro-sycsa col-12 imgLiquid imgLiquidNoFill">
             <img src="<?php echo get_field('miembro_sycsa_banner__logo');  ?>" alt="Grupo SYCSA">
@@ -25,10 +25,10 @@ Template Name: Inicio MPI Grupo SYCSA
         </a>
       </div>
     <?php else: ?>
-      <div class="incio-sycsa-tarjeta col-xs-12 col-md-4">
+      <div class="inicio-sycsa-tarjeta col-xs-12 col-md-4">
         <div class="row h100">
           <div class="col-12 ha my-auto text-center">
-            <h5><?php echo get_the_title(); ?></h5>
+            <h3><?php echo get_the_title(); ?></h3>
             <p class="col-12 text-center ">
               <?php
               echo get_field('miembro_sycsa_texto');

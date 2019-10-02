@@ -35,7 +35,7 @@ function sliders() {
     arrows: false,
     centerPadding: '60px',
     slidesToShow: 2,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     responsive: [
       {
@@ -44,7 +44,7 @@ function sliders() {
           centerMode: true,
           arrows: false,
           centerPadding: '40px',
-          slidesToShow: 1
+          slidesToShow: 2
         }
       },
       {

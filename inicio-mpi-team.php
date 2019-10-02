@@ -3,7 +3,7 @@
 Template Name: inicio MPI Team
 */
 ?>
-<section id="inicio-team" class="container-fluid">
+<section id="inicio-team" class="container-fluid fadeIn animated">
   <h3 class="inicio-titulo col-12 text-center">Team MPI</h3>
 
   <div class="row">
@@ -22,17 +22,51 @@ Template Name: inicio MPI Team
 
             <div class="inicio-team-tarjeta col-8">
 
-              <div class="container-fluid">
+              <div class="contenedor-tarjeta container-fluid">
 
-                <?php
-                echo the_field('mpi_team_nombre');
-                echo the_field('mpi_team_puesto');
-                echo the_field('mpi_team_foto_perfil');
-                echo the_field('mpi_team_foto_header');
-                echo the_field('mpi_team_twitter');
-                echo the_field('mpi_team_facebook');
+                <div class="col-12 team-tarjeta-wrap">
 
-                ?>
+                  <div class="col-12 team-tarjeta-header">
+                    <div class="wa tarjeta-header-fondo">
+                      <div class="wa col-12 tarjeta-foto imgLiquid imgLiquidFill">
+                        <img src="<?php echo the_field('mpi_team_foto_perfil'); ?>" alt="MPI Team">
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-12 tarjeta-datos">
+                    <div class="row">
+                      <div class="col-12">
+                        <h5 class="col-12 tarjeta-nombre text-center">
+                          <?php
+                          echo the_field('mpi_team_nombre');
+                          ?>
+                        </h5>
+                      </div>
+                      <div class="col-12">
+                        <h6 class="col-12 tarjeta-puesto text-center">
+                          <?php
+                          echo the_field('mpi_team_puesto');
+                          ?>
+                        </h6>
+                      </div>
+                    </div>
+                    <ul class="row tarjeta-redes">
+                      <li class="text-center justify-content-center align-item-center">
+                        <a href="<?php echo the_field('mpi_team_twitter'); ?>">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="text-center justify-content-center align-item-center">
+                        <a href="<?php echo the_field('mpi_team_facebook'); ?>">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
               </div>
             </div>
           </div>

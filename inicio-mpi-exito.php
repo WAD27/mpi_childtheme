@@ -3,7 +3,9 @@
 Template Name: Inicio MPI Casos exito
 */
 ?>
-<section id="inicio-exito" class="container">
+<section id="inicio-exito" class="container-fluid fadeIn animated">
+<div class="col-12">
+
   <h3 class="inicio-titulo col-12 text-center">Casos de Éxito</h3>
 
   <?php
@@ -17,4 +19,5 @@ endwhile;
 
 ?>
 
+</div>
 </section>

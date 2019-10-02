@@ -3,6 +3,7 @@
 :root {
   --color-black: black;
   --color-white: white;
+  --color-clear: whitesmoke;
   --color-1: #AE9460;
   /* --color-2: #6D6E70; */
   --color-2: #6D6F71;
@@ -10,7 +11,7 @@
 }
 /* wireframe */
 * {
-  outline: 1px dashed var(--color-1);
+  /* outline: 1px dashed var(--color-1); */
 }
 /* overrides */
 body {
@@ -24,6 +25,27 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: lighter;
   color: var(--color-1) !important;
 }
+h1 {
+  font-size: 2em;
+}
+h1 {
+  font-size: 1.85em;
+}
+h2 {
+  font-size: 1.7em;
+}
+h3 {
+  font-size: 1.55em;
+}
+h4 {
+  font-size: 1.4em;
+}
+h5 {
+  font-size: 1.25em;
+}
+h6 {
+  font-size: 1.15em;
+}
 p {
   color: var(--color-2) !important;
 }
@@ -32,6 +54,8 @@ a {
 }
 ul {
   margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 section {
   padding-bottom: 64px;
@@ -43,11 +67,23 @@ footer {
   padding: 16px 0;
 }
 .main-wrapper {
-    padding-bottom: 0;
+  padding-bottom: 0;
+}
+.main-content-wrapper {
+
+  padding-top: 16px;
+  padding-bottom: 0px;
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
+
 }
 /* lib */
 .ha {
   height: auto;
+}
+.wa {
+  width: auto;
 }
 .h100 {
   height: 100% !important;
@@ -83,6 +119,7 @@ footer {
   color: var(--color-2);
 }
 .popup-menu a {
+  font-weight: 100;
   background-image: -webkit-linear-gradient(top, var(--color-2) 0, var(--color-2) 100%) !important;
   background-image: linear-gradient(to bottom, var(--color-2) 0, var(--color-2) 100%) !important;
 }
@@ -125,8 +162,56 @@ footer {
 #inicio-team .row {
   height: 100%;
 }
-#inicio-team-tarjeta {
+.contenedor-slider {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.inicio-team-tarjeta {
+  /* padding: 1rem; */
+  /* max-width: 400px; */
+}
+.tarjeta-datos {
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+.contenedor-tarjeta {
   padding: 1rem;
+}
+.team-tarjeta-wrap {
+  background-color: var(--color-clear);
+  border-radius: 10px;
+}
+.team-tarjeta-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  border-radius: 50px;
+}
+.tarjeta-header-fondo {
+  border-radius: 50px;
+  opacity: 0.75;
+  overflow: hidden;
+  background-color: lightgray;
+}
+.tarjeta-foto {
+  height: 100px;
+  width: 100px;
+}
+.tarjeta-redes li {
+  width: 50%;
+  display: block;
+}
+.tarjeta-redes li a {
+  width: 100%;
+  display: block;
+}
+.tarjeta-redes li a:hover {
+  transition: 0.5s;
+  opacity:0.65;
+}
+.tarjeta-redes {
+  display: flex;
 }
 #inicio-slick-team {
   min-height: 320px;
@@ -156,6 +241,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.title-wrapper {
+    padding-top: 16px !important;
+    padding-bottom: 96px !important;
+}
 .vc_btn3.vc_btn3-color-blue, .vc_btn3.vc_btn3-color-blue.vc_btn3-style-flat {
   color: var(--color-white) !important;
   background-color: var(--color-1) !important;
@@ -167,15 +256,28 @@ footer {
 }
 .vc_grid .vc_custom_1419258058654 {
   padding-left: 15px !important;
-  background-color: var(--color-white) !important;
+  /* background-color: var(--color-white) !important; */
+}
+.vc_gitem-post-data-source-post_date {
+  margin-bottom: 4px !important;
 }
 .vc_btn3 {
   letter-spacing: 3px !important;
   font-weight: lighter !important;
 }
-.incio-sycsa-tarjeta  {
+.inicio-sycsa-tarjeta,
+.mpi-socios-banners-tarjeta  {
   height: 220px;
   margin-bottom: 0;
+  padding: 1rem;
+}
+#inicio-exito {
+  background-color: var(--color-clear);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+#inicio-sycsa {
+  padding-top: 32px;
 }
 #inicio-sycsa a {
   height: 100%;
@@ -183,6 +285,7 @@ footer {
 #inicio-sycsa .img-miembro-sycsa {
   height: 100%;
 }
+
 /* footer */
 .copyright p {
   color: var(--color-1) !important;
