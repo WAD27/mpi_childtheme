@@ -75,7 +75,7 @@ if (MintOptions::get('layout--content_width') == 'expanded') {
 			// Title wrapper
 
 			if (MintHelpers::is_title_wrapper() && have_posts()) {
-				get_template_part('parts/title_wrapper');
+				get_template_part('partes/title_wrapper');
 			}
 			?>
 

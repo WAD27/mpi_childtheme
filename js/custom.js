@@ -3,6 +3,7 @@ jQuery(document).ready(()=>{
   sliders()
   imagenes()
   forza_textos()
+  quitaDescripcionMenu()
 
   //
   console.log("Custom Scripts OK.");
@@ -71,4 +72,12 @@ function forza_textos() {
     f.innerHTML = "Leer mas historias de exito"
 
   },500)
+}
+
+function quitaDescripcionMenu() {
+  x = document.querySelectorAll('.menu-item-desc')
+  x.forEach((item)=>{
+    item.parentNode.removeChild(item)
+  })
+
 }

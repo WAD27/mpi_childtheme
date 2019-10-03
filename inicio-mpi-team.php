@@ -8,7 +8,7 @@ Template Name: inicio MPI Team
 
   <div class="row">
 
-    <div class="col-xs-12 col-md-8">
+    <div class="contenedor-slider col-xs-12 col-md-8">
 
       <div id="inicio-slick-team" class="col-12">
         <?php
@@ -86,7 +86,7 @@ Template Name: inicio MPI Team
 
     <div class="row">
       <!-- contenido de la pag 'inicio-team' -->
-      <div class="ha col-12 my-auto text-center">
+      <div class="contenedor-slider ha col-12 my-auto text-center">
         <?php
         $args = array('page_id' => 6947);
         $q = new WP_Query($args);

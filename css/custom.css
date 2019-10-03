@@ -66,6 +66,15 @@ span {
 footer {
   padding: 16px 0;
 }
+.main-menu > .menu-item > a {
+  font-family: var(--font-mpi) !important;
+  letter-spacing: 0.85px !important;
+  font-weight: 400 !important;
+  font-size: 0.7em !important;
+}
+.main-header__logo-img {
+    max-width: 320px !important;
+}
 .main-wrapper {
   padding-bottom: 0;
 }
@@ -166,6 +175,10 @@ footer {
   padding-left: 32px;
   padding-right: 32px;
 }
+.inicio-descripcion-quien {
+  padding-left: 32px;
+  padding-right: 32px;
+}
 .inicio-team-tarjeta {
   /* padding: 1rem; */
   /* max-width: 400px; */
@@ -242,8 +255,8 @@ footer {
   align-items: center;
 }
 .title-wrapper {
-    padding-top: 16px !important;
-    padding-bottom: 96px !important;
+  padding-top: 16px !important;
+  padding-bottom: 96px !important;
 }
 .vc_btn3.vc_btn3-color-blue, .vc_btn3.vc_btn3-color-blue.vc_btn3-style-flat {
   color: var(--color-white) !important;
@@ -267,9 +280,20 @@ footer {
 }
 .inicio-sycsa-tarjeta,
 .mpi-socios-banners-tarjeta  {
-  height: 220px;
+  height: 232px;
   margin-bottom: 0;
   padding: 1rem;
+}
+.contenedor-inputs {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+.input-contacto {
+  /* display: flex; */
+}
+a, input, textarea, select, button {
+  border-radius: 5px !important;
 }
 #inicio-exito {
   background-color: var(--color-clear);
