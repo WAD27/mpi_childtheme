@@ -245,11 +245,13 @@ footer {
 .inicio-contacto-lista {
   list-style-type: none;
   margin: 16px 0 16px 0;
+  padding: 0 1rem;
 }
 .inicio-contacto-texto {
   height: 240px;
+  padding: 0 2rem;
 }
-.inicio-contacto-texto .row{
+.inicio-contacto-texto .row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,3 +316,5 @@ a, input, textarea, select, button {
 .copyright p {
   color: var(--color-1) !important;
 }
+/* Responsivos */
+@import "custom-responsive.css";

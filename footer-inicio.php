@@ -17,7 +17,7 @@
     <div class="col-xs-12 col-md-6 col-lg-4">
 
       <?php get_template_part('partes/contacto-datos'); ?>
-      
+
       <div class="col-12 justify-content-center">
         <a class="btn-mpi col-12" href="#">Escríbenos directamente</a>
       </div>

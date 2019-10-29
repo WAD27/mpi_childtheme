@@ -1,0 +1,16 @@
+@media screen and (min-width:576px) {/*movil*/
+  * {
+    outline: 1px solid red;
+  }
+  .inicio-contacto-lista {
+    text-align: center;
+  }
+}
+@media screen and (min-width:768px) {/*tablets*/
+}
+@media screen and (min-width:992px) {/*laptops*/
+
+}
+@media screen and (min-width:1200px) {/*desktops*/
+
+}
