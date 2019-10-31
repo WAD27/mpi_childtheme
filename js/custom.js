@@ -67,40 +67,42 @@ function slider_team() {
 
 function slider_galeria() {
 
-  jQuery("#slick-galeria").slick({
-    speed: 1000,
-    fade: false,
-    cssEase: 'linear',
-    centerMode: true,
-    dots:true,
-    arrows: false,
-    centerPadding: '60px',
-    slidesToShow: 2,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          centerMode: true,
-          arrows: false,
-          centerPadding: '40px',
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '0px',
-          slidesToShow: 1
-        }
-      }
-    ]
-  })
-
-  console.log("Sliders OK.")
+ //  $('#slick-galeria-for').slick({
+ //   slidesToShow: 1,
+ //   slidesToScroll: 1,
+ //   arrows: false,
+ //   fade: true,
+ //   asNavFor: '.slider-nav'
+ // });
+ jQuery('#slick-galeria-nav').slick({
+   slidesToShow: 3,
+   slidesToScroll: 1,
+   // asNavFor: '#slick-galeria-for',
+   dots: true,
+   centerMode: true,
+   focusOnSelect: true,
+   responsive: [
+     {
+       breakpoint: 768,
+       settings: {
+         centerMode: true,
+         arrows: false,
+         centerPadding: '40px',
+         slidesToShow: 2
+       }
+     },
+     {
+       breakpoint: 480,
+       settings: {
+         arrows: false,
+         centerMode: true,
+         centerPadding: '0px',
+         slidesToShow: 1
+       }
+     }
+   ]
+ });
+  console.log("Slider galería OK.")
 
 }
 

@@ -380,6 +380,12 @@ a, input, textarea, select, button {
 .tarjeta-galeria-fecha {
   margin: 0;
 }
+.galeria-nav-img-wrap {
+  padding: 0 1rem;
+}
+.galeria-nav-img {
+  height: 8rem;
+}
 /* footer */
 .copyright p {
   color: var(--color-1) !important;

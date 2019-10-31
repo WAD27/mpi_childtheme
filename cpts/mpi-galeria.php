@@ -20,7 +20,7 @@ function mpi_galeria() {
     'label'               => __( 'MPI Galería', 'mpi-theme' ),
     'description'         => __( 'Galerías de MPI', 'mpi-theme' ),
     'labels'              => $labels,//backend
-    'supports'            => array( 'title'),
+    'supports'            => array( 'title','thumbnail'),
     'taxonomies'          => array( 'MPI Galería' ),
     'menu_icon'           => 'dashicons-format-gallery',
     'hierarchical'        => false,

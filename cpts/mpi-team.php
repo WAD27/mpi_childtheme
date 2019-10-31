@@ -20,7 +20,7 @@ function mpi_team() {
     'label'               => __( 'MPI Team', 'mpi-theme' ),
     'description'         => __( 'Miembros del Team MPI', 'mpi-theme' ),
     'labels'              => $labels,//backend
-    'supports'            => array( 'title'),
+    'supports'            => array( 'title','thumbnail'),
     'taxonomies'          => array( 'MPI Team' ),
     'menu_icon'           => 'dashicons-groups',
     'hierarchical'        => false,
