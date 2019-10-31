@@ -3,7 +3,7 @@
 Template Name: inicio MPI Team
 */
 ?>
-<section id="inicio-team" class="container fadeIn animated">
+<section id="inicio-team" class="container wpb_animate_when_almost_visible wpb_bottom-to-top bottom-to-top wpb_start_animation animated">
   <h3 class="inicio-titulo col-12 text-center">Team MPI</h3>
 
   <div class="row">

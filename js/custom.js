@@ -1,10 +1,11 @@
 jQuery(document).ready(()=>{
 
-  sliders()
+  slider_team()
+  slider_galeria()
   imagenes()
   forza_textos()
   quitaDescripcionMenu()
-
+  // blog_container()
   //
   console.log("Custom Scripts OK.");
 
@@ -25,9 +26,48 @@ function grid() {
   console.log("Masonry OK.");
 }
 
-function sliders() {
+function slider_team() {
 
   jQuery("#inicio-slick-team").slick({
+    speed: 1000,
+    fade: false,
+    cssEase: 'linear',
+    centerMode: true,
+    dots:true,
+    arrows: false,
+    centerPadding: '60px',
+    slidesToShow: 2,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: true,
+          arrows: false,
+          centerPadding: '40px',
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  })
+
+  console.log("Sliders OK.")
+
+}
+
+function slider_galeria() {
+
+  jQuery("#slick-galeria").slick({
     speed: 1000,
     fade: false,
     cssEase: 'linear',
@@ -80,4 +120,9 @@ function quitaDescripcionMenu() {
     item.parentNode.removeChild(item)
   })
 
+}
+
+function blog_container() {
+  x = document.querySelector('.js-masonry')
+  x.classList.add("container")
 }

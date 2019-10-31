@@ -11,7 +11,7 @@ get_header();
   while (have_posts()):the_post();
   ?>
   <div class="container texto-archive">
-    <h3 class="text-center"><?php echo get_the_title(); ?></h3>
+    <!-- <h3 class="text-center"><?php //echo get_the_title(); ?></h3> -->
     <p class="col-12"><?php echo the_content(); ?></p>
   </div>
   <?php

@@ -86,8 +86,7 @@ footer {
   padding-bottom: 0;
 }
 .main-content-wrapper {
-
-  padding-top: 16px;
+  padding-top: 2rem;
   padding-bottom: 0px;
   position: relative;
   background-color: #fff;
@@ -187,8 +186,8 @@ footer {
   padding-right: 32px;
 }
 .inicio-descripcion-quien {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .inicio-team-tarjeta {
   /* padding: 1rem; */
@@ -314,12 +313,15 @@ footer {
   margin-bottom: 0;
   padding: 1rem;
 }
-.img-mpi-socios-banner:hover {
+.img-mpi-socios-banner{
   transition: 0.5px;
 }
 .img-mpi-socios-banner:hover {
-  -webkit-filter: 1px;
-  filter: 1px;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+.js-masonry {
+  margin: 0 auto;
 }
 .contenedor-inputs {
   display: block;
@@ -347,14 +349,37 @@ a, input, textarea, select, button {
 }
 #inicio-sycsa .img-miembro-sycsa {
   height: 100%;
-  transition: 5s;
+  transition: 0.5s;
 }
 #inicio-sycsa .img-miembro-sycsa:hover {
   height: 100%;
   -webkit-filter: blur(1px);
   filter: blur(1px);
 }
-
+.tarjeta-galeria {
+  transition: 0.5s;
+  padding: 0;
+  background-color: var(--color-clear);
+  border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #DDD;
+}
+.tarjeta-galeria:hover {
+  box-shadow: 2px 2px 4px #CCC;
+}
+.tarjeta-galeria a {
+  padding: 1rem;
+  display: block;
+}
+.tarjeta-galeria-img {
+  height: 14rem;
+}
+.tarjeta-galeria-titulo {
+  margin: 0;
+}
+.tarjeta-galeria-fecha {
+  margin: 0;
+}
 /* footer */
 .copyright p {
   color: var(--color-1) !important;

@@ -24,3 +24,16 @@ add_action('init','mpi_team', 0);
 add_action('init','mpi_galeria', 1);
 add_action('init','mpi_banners', 2);
 add_action('init','grupo_sycsa', 3);
+
+// excerpt_more
+function get_excerpt($text) {
+  $excerpt = $text;
+  // $excerpt = preg_replace(" ([.*?])",'',$excerpt);
+  // $excerpt = strip_shortcodes($excerpt);
+  // $excerpt = strip_tags($excerpt);
+  $excerpt = substr($excerpt, 0, 25);
+  // $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+  // $excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
+  $excerpt = $excerpt.'... Leer Más';
+  return $excerpt;
+}

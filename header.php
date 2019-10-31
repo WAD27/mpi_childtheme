@@ -96,11 +96,9 @@ if (MintOptions::get('layout--content_width') == 'expanded') {
 			echo '_bg_gray';
 		}
 		// custom
-		if (is_home()):
-
-			echo 'container';
-
-		endif;
+		// if (is_home()):
+		//
+		// endif;
 			?>
 			">
 			<?php if (!(is_singular(array('product')) && !$sidebar_location)) { ?>

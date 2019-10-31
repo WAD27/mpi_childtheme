@@ -71,51 +71,51 @@ $full_height = MintOptions::get('title_wrapper--full_height');
 		// Title
 
 		?>
-		<!-- <div class="title-wrapper__row _title"> -->
-			<!-- <h1 class="title-wrapper__title"> -->
+		<div class="title-wrapper__row _title">
+			<h1 class="title-wrapper__title">
 				<?php
 
-				// if (is_home() && is_front_page()) {
-				//
-				// 	bloginfo('name');
-				//
-				// } elseif (MintShop::is_woocommerce()) {
-				//
-				// 	woocommerce_page_title();
-				//
-				// } elseif (is_home()) {
-				//
-				// 	single_post_title();
-				//
-				// } elseif (is_tax('projects_category')) {
-				//
-				// 	single_cat_title();
-				//
-				// } elseif (is_archive() && get_post_type() == 'project') {
-				//
-				// 	echo MintOptions::get('projects--title');
-				//
-				// } elseif (is_archive()) {
-				//
-				// 	the_archive_title();
-				//
-				// } elseif (is_search()) {
-				//
-				// 	printf(esc_html__('Search Results for: %s', 'mint'), get_search_query());
-				//
-				// } elseif (!have_posts()) {
-				//
-				// 	esc_html_e('Nothing Found', 'mint');
-				//
-				// } else {
-				//
-				// 	the_title();
-				//
-				// }
+				if (is_home() && is_front_page()) {
+
+					bloginfo('name');
+
+				} elseif (MintShop::is_woocommerce()) {
+
+					woocommerce_page_title();
+
+				} elseif (is_home()) {
+
+					single_post_title();
+
+				} elseif (is_tax('projects_category')) {
+
+					 single_cat_title();
+
+				} elseif (is_archive() && get_post_type() == 'project') {
+
+					echo MintOptions::get('projects--title');
+
+				} elseif (is_archive()) {
+
+					the_archive_title();
+
+				} elseif (is_search()) {
+
+					printf(esc_html__('Search Results for: %s', 'mint'), get_search_query());
+
+				} elseif (!have_posts()) {
+
+					esc_html_e('Nothing Found', 'mint');
+
+				} else {
+
+					the_title();
+
+				}
 
 				?>
-			<!-- </h1> -->
-		<!-- </div> -->
+			</h1>
+		</div>
 		<?php
 
 
