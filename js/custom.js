@@ -67,20 +67,22 @@ function slider_team() {
 
 function slider_galeria() {
 
- //  $('#slick-galeria-for').slick({
- //   slidesToShow: 1,
- //   slidesToScroll: 1,
- //   arrows: false,
- //   fade: true,
- //   asNavFor: '.slider-nav'
- // });
+  jQuery('#slick-galeria-for').slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: false,
+   fade: true,
+   asNavFor: '#slick-galeria-nav'
+ });
  jQuery('#slick-galeria-nav').slick({
    slidesToShow: 3,
    slidesToScroll: 1,
-   // asNavFor: '#slick-galeria-for',
+   asNavFor: '#slick-galeria-for',
    dots: true,
    centerMode: true,
    focusOnSelect: true,
+   autoplay: true,
+   autoplaySpeed: 3000,
    responsive: [
      {
        breakpoint: 768,
