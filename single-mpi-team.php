@@ -3,9 +3,15 @@
 get_header();
 
 
+?>
 
-echo "MPI TEAM SINGLE!";
+<section class="single-cpt container">
 
+  
+
+</section>
+
+<?php
 
 
 get_footer();

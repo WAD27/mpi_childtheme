@@ -386,14 +386,17 @@ a, input, textarea, select, button {
 .galeria-nav-img {
   height: 8rem;
 }
+#slick-galeria-for {
+  margin-top: 2rem;
+}
+#slick-galeria-nav {
+  margin-top: 4rem;
+}
 .galeria-for-img-wrap {
   padding: 0;
 }
 .galeria-for-img {
   height: 18rem;
-}
-.single-descripcion {
-  margin-bottom: 2rem;
 }
 /* footer */
 .copyright p {
