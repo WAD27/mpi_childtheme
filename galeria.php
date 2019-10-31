@@ -2,19 +2,36 @@
 /*
 Template Name: Galería MPI
 */
-
 get_header();
 
-while (have_posts()): the_post();
+$args = array('post_type' => 'mpi-galeria' );
+$q = new WP_Query($args);
+if ($q->have_posts()):
+  while ($q->have_posts()):
+    $q->the_post();
+    ?>
 
-  echo the_content();
+    <?php
+    // echo the_field('mpi_team_nombre');
+    // echo the_field('mpi_team_puesto');
+    // echo the_field('mpi_team_foto_perfil');
+    // echo the_field('mpi_team_foto_header');
+    // echo the_field('mpi_team_instagram');
+    // echo the_field('mpi_team_twitter');
+    // echo the_field('mpi_team_facebook');
+    // echo the_field('mpi_team_email');
+    // echo the_field('mpi_team_descripcion_corta');
 
-endwhile;
+    ?>
 
- ?>
+    <?php
+  endwhile;
+endif;
 
 
 
+get_footer();
+?>
 
 
  <?php get_footer();

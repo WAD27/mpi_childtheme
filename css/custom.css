@@ -73,7 +73,14 @@ footer {
   font-size: 0.7em !important;
 }
 .main-header__logo-img {
-    max-width: 320px !important;
+    max-width: 265px !important;
+}
+.menu-mpi-menu-container {
+  display: flex;
+}
+.main-header__main-menu {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .main-wrapper {
   padding-bottom: 0;
@@ -143,8 +150,8 @@ footer {
   color: var(--color-2) !important;
 }
 .add-menu a::after, .main-menu a::after {
-  bottom: 4px;
-  height: 2px;
+  bottom: 3px;
+  height: 1px;
   background-color: var(--color-1);
 }
 /* decoracion menu movil */
@@ -287,12 +294,14 @@ footer {
   padding: 1rem;
 }
 .contenedor-inputs {
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
+  display: block;
 }
 .input-contacto {
-  /* display: flex; */
+  display: flex;
+  justify-content: center;
+}
+.input-contacto label {
+  width: 100%;
 }
 a, input, textarea, select, button {
   border-radius: 5px !important;
