@@ -72,8 +72,11 @@ footer {
   font-weight: 400 !important;
   font-size: 0.7em !important;
 }
+.main-header._fixed .main-header__logo._dark a {
+  padding-left: 4rem !important;
+}
 .main-header__logo-img {
-    max-width: 265px !important;
+  max-width: 265px !important;
 }
 .menu-mpi-menu-container {
   display: flex;
@@ -145,6 +148,9 @@ footer {
 .main-header__modules a:hover {
   color: var(--color-1) !important;
 }
+.menu-item-desc {
+  opacity: 0;
+}
 #menu-mpi-menu li a {
   color: var(--color-2) !important;
 }
@@ -181,6 +187,28 @@ footer {
 }
 #inicio-team .row {
   height: 100%;
+}
+.single-team-img {
+  height: 320px;
+}
+.title-wrapper__subtitle {
+  font-family: var(--font-mpi) !important;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+.title-wrapper__row {
+  margin-top: 1rem !important;
+}
+.single-team-contacto {
+  display: flex;
+}
+.single-team-contacto ul{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0;
 }
 .texto-archive {
   margin-bottom: 2rem;
@@ -267,11 +295,11 @@ footer {
   bottom: 0.5rem !important;
 }
 .ultimate-vticker.ticker {
-    height: auto !important;
-    padding: 1rem 0 !important;
-    border-radius: 8px !important;
-    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% !important;
-    box-shadow: 2px 2px 2px #EEE !important;
+  height: auto !important;
+  padding: 1rem 0 !important;
+  border-radius: 8px !important;
+  background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% !important;
+  box-shadow: 2px 2px 2px #EEE !important;
 }
 .inicio-contacto-lista {
   list-style-type: none;
