@@ -17,7 +17,7 @@ else:
 endif;
 //Secciones complementarias
 get_template_part('inicio-mpi-team');
-get_template_part('inicio-mpi-exito');
+// get_template_part('inicio-mpi-exito');
 get_template_part('inicio-mpi-sycsa');
 
 
