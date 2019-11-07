@@ -3,7 +3,7 @@ jQuery(document).ready(()=>{
   slider_team()
   slider_galeria()
   imagenes()
-  forza_textos()
+  forzar_textos()
   quitaDescripcionMenu()
   // blog_container()
   //
@@ -108,7 +108,7 @@ function slider_galeria() {
 
 }
 
-function forza_textos() {
+function forzar_textos() {
 
   setTimeout(()=>{
     let f = document.querySelector('#inicio-exito .vc_btn3-color-blue')//boton inicio ver mas historias de exito

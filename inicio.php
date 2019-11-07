@@ -6,6 +6,11 @@ Template Name: Inicio MPI
 get_header();
 
 // contenido pagina inicio
+?>
+
+<!-- <section id="inicio-quien" class="container"> -->
+
+<?php
 if (have_posts()):
   while (have_posts()): the_post();
 
@@ -13,8 +18,13 @@ if (have_posts()):
 
 endwhile;
 else:
-  echo "No hay Posts para MPI";
+  echo "No hay información para MPI";
 endif;
+?>
+
+<!-- </section> -->
+
+<?php
 //Secciones complementarias
 get_template_part('inicio-mpi-team');
 // get_template_part('inicio-mpi-exito');

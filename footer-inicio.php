@@ -19,7 +19,7 @@
       <?php get_template_part('partes/contacto-datos'); ?>
 
       <div class="col-12 justify-content-center">
-        <a class="btn-mpi col-12" href="#">Escríbenos directamente</a>
+        <a class="btn-mpi col-12" href="<?php echo get_page_link(7030) ?>">Escríbenos directamente</a>
       </div>
     </div>
 

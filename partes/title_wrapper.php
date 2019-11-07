@@ -25,7 +25,7 @@ $full_height = MintOptions::get('title_wrapper--full_height');
 				"
 		></div>
 
-			<div class="title-wrapper__bg-pattern"></div>
+			<!-- <div class="title-wrapper__bg-pattern"></div> -->
 
 	<div
 		class="title-wrapper__bg-overlay"

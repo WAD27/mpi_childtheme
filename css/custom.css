@@ -162,6 +162,10 @@ footer {
   background-size: 100% 2px;
 }
 /* inicio */
+.titulo-quien h4 {
+  font-size: 20px !important;
+  margin-bottom: 0!important;
+}
 #inicio-quien {
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
@@ -170,7 +174,7 @@ footer {
 #inicio-quien li {
   font-family: var(--font-mpi);
   font-weight: lighter;
-  height: auto;
+  height: auto !important;
 }
 #inicio-team {
   min-height: 320px;
