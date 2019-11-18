@@ -24,17 +24,17 @@ get_header();
       <ul>
         <li>
           <a href="tel:<?php echo get_field('mpi_team_tel'); ?>">
-            Teléfono:  <?php echo get_field('mpi_team_tel'); ?>
+            <i class="fa fa-phone">&nbsp;</i>  <?php echo get_field('mpi_team_tel'); ?>
           </a>
         </li>
         <li>
           <a href="tel:<?php echo get_field('mpi_team_cel'); ?>">
-            Celular:  <?php echo get_field('mpi_team_cel'); ?>
+            <i class="fa fa-mobile">&nbsp;</i> <?php echo get_field('mpi_team_cel'); ?>
           </a>
         </li>
         <li>
           <a href="mailto:<?php echo get_field('mpi_team_email'); ?>">
-            Correo:  <?php echo get_field('mpi_team_email'); ?>
+            <i class="fa fa-envelope">&nbsp;</i> <?php echo get_field('mpi_team_email'); ?>
           </a>
         </li>
       </ul>

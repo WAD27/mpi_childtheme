@@ -52,6 +52,9 @@ p {
 a {
   color: var(--color-1) !important;
 }
+a:hover {
+  color: var(--color-2) !important;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -73,10 +76,10 @@ footer {
   font-size: 0.7em !important;
 }
 .main-header._fixed .main-header__logo._dark a {
-  padding-left: 4rem !important;
+  padding-left: 4rem;
 }
 .main-header__logo-img {
-  max-width: 265px !important;
+  max-width: 230px !important;
 }
 .menu-mpi-menu-container {
   display: flex;
@@ -191,6 +194,9 @@ footer {
 .single-team-img {
   height: 320px;
 }
+.title-wrapper__subtitle span {
+  background-image: none !important;
+}
 .title-wrapper__subtitle {
   font-family: var(--font-mpi) !important;
   letter-spacing: .2em;
@@ -203,6 +209,23 @@ footer {
 }
 .single-team-contacto {
   display: flex;
+  padding-top: 2rem;
+}
+.single-team-contacto li {
+  margin-bottom: 1rem;
+}
+.single-team-contacto a {
+  transition: 0.35s;
+  padding: 0.5rem;
+  border: 1px solid var(--color-1);
+  box-shadow: 0px 0px 0px rgba(50,50,50,0.65);
+}
+.single-team-contacto a:hover {
+  border: 1px solid var(--color-2);
+  box-shadow: 1px 1px 3px rgba(50,50,50,0.8);
+}
+.single-team-contacto a i {
+  font-size: 1rem;
 }
 .single-team-contacto ul{
   display: flex;
@@ -435,4 +458,37 @@ a, input, textarea, select, button {
   color: var(--color-1) !important;
 }
 /* Responsivos */
-@import "custom-responsive.css";
+@media (max-width:576px) {/*movil*/
+  .inicio-contacto-lista {
+    text-align: center;
+  }
+  .main-header._fixed .main-header__logo._dark a {
+    padding-left: 1rem !important;
+  }
+  .single-team-contacto ul{
+    display:block;
+  }
+  .single-team-contacto li {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+  @media (max-width:768px) {/*tablets*/
+  }
+  @media (max-width:986px) {/*laptops*/
+    .main-header._fixed .main-header__logo._dark a {
+      padding-left: 1rem;
+    }
+    #inicio-team-texto {
+      height: auto;
+    }
+    .inicio-contacto-texto {
+      height: auto;
+    }
+  }
+  @media (max-width:1200px) {/*desktops*/
+    .main-header._fixed .main-header__logo._dark a {
+      padding-left: 2rem;
+    }
+  }
