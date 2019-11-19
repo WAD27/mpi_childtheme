@@ -8,6 +8,7 @@ $full_height = MintOptions::get('title_wrapper--full_height');
 <div class="
 title-wrapper
 js-title-wrapper
+_parallax
 <?php
 echo ' text-' . $align;
 if (!MintOptions::get('title_wrapper--parallax')) { ?> _parallax<?php }
@@ -22,6 +23,10 @@ background-image:url(<?php
 	if (is_single() && get_post_type() === "mpi-team") {
 
 		echo get_field('mpi_team_foto_header');
+
+	} else if(is_archive()) {
+
+		echo site_url() . '/wp-content/uploads/2019/10/placeholder.chido_.2.jpg';
 
 	} else {
 
@@ -92,11 +97,12 @@ background-image:url(<?php
 
 					} elseif (is_archive()) {
 
-						the_archive_title();
+						// the_archive_title();
+						echo "CASOS DE EXITO";
 
 					} elseif (is_search()) {
 
-						printf(esc_html__('Search Results for: %s', 'mint'), get_search_query());
+						printf(esc_html__('Resultado de busqueda: %s', 'mint'), get_search_query());
 
 					} elseif (!have_posts()) {
 
