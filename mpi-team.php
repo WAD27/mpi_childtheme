@@ -55,18 +55,18 @@ if ($q->have_posts()):
                 </h6>
               </div>
             </div>
-            <ul class="row tarjeta-redes">
+            <!-- <ul class="row tarjeta-redes">
               <li class="text-center justify-content-center align-item-center">
-                <a href="<?php echo the_field('mpi_team_twitter'); ?>">
+                <a href="<?php //echo the_field('mpi_team_twitter'); ?>">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
               <li class="text-center justify-content-center align-item-center">
-                <a href="<?php echo the_field('mpi_team_facebook'); ?>">
+                <a href="<?php //echo the_field('mpi_team_facebook'); ?>">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </div>
 
         </a>
